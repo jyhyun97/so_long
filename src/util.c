@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 16:28:12 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/07/03 11:29:03 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/07/07 15:34:27 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
+	if (s == 0)
+		return (0);
 	while (s[i] != '\0')
 		i++;
 	return (i);

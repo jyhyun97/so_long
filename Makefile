@@ -6,7 +6,7 @@
 #    By: jeonhyun <jeonhyun@student.42seoul.kr      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/03 13:53:30 by jeonhyun          #+#    #+#              #
-#    Updated: 2021/07/03 17:14:15 by jeonhyun         ###   ########.fr        #
+#    Updated: 2021/07/09 15:36:16 by jeonhyun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,10 @@ NAME = so_long
 FLAGS = -Wall -Wextra -Werror
 SRCS = src/main.c\
 	   src/split.c\
-	   src/util.c
+	   src/util.c\
+	   src/init.c\
+	   src/move.c\
+	   src/screen.c
 OBJS = $(SRCS:.c=.o)
 
 .c.o :
