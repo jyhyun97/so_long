@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 15:32:43 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/07/09 16:53:46 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/07/19 13:49:11 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ typedef struct s_data
 {
 	void	*mlx;
 	void	*win;
-	int	count;
+	int		count;
 	t_map	map;
 	t_imgs	imgs;
 }	t_data;
