@@ -57,6 +57,7 @@ typedef struct s_data
 {
 	void	*mlx;
 	void	*win;
+	int	count;
 	t_map	map;
 	t_imgs	imgs;
 }	t_data;
@@ -70,6 +71,8 @@ int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strlcpy(char *dst, const char *src, int dstsize);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strdup(const char *s1);
+
+char	*ft_itoa(int n);
 
 void	init_data(t_data *data);
 int		parse_map(t_map *map, char *argv);

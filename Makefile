@@ -14,6 +14,7 @@ NAME = so_long
 FLAGS = -Wall -Wextra -Werror
 SRCS = src/main.c\
 	   src/split.c\
+	   src/ft_itoa.c\
 	   src/util.c\
 	   src/init.c\
 	   src/move.c\
