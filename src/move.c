@@ -15,18 +15,15 @@
 static void	move_W(t_data *data, int p_x, int p_y)
 {
 	char	tmp;
-	char	*output;
 
-	data->count++;
-	output = ft_itoa(data->count);
-	write(1, output, ft_strlen(output));
-	write(1, "\n", 1);
-	free(output);
 	tmp = data->map.map[p_y - 1][p_x];
 	if (tmp == 'E')
 	{
 		if (letter_count(&data->map, 'C') == 0)
+		{
+			print_count(data);
 			msg_end("Game clear~!\n", 1, data);
+		}
 	}
 	else
 	{
@@ -34,23 +31,22 @@ static void	move_W(t_data *data, int p_x, int p_y)
 			tmp = '0';
 		data->map.map[p_y - 1][p_x] = 'P';
 		data->map.map[p_y][p_x] = tmp;
+		print_count(data);
 	}
 }
 
 static void	move_A(t_data *data, int p_x, int p_y)
 {
 	char	tmp;
-	char	*output;
 
-	data->count++;
-	output = ft_itoa(data->count);
-	write(1, output, ft_strlen(output));
-	write(1, "\n", 1);
 	tmp = data->map.map[p_y][p_x - 1];
 	if (tmp == 'E')
 	{
 		if (letter_count(&data->map, 'C') == 0)
+		{
+			print_count(data);
 			msg_end("Game clear~!\n", 1, data);
+		}
 	}
 	else
 	{
@@ -58,23 +54,22 @@ static void	move_A(t_data *data, int p_x, int p_y)
 			tmp = '0';
 		data->map.map[p_y][p_x - 1] = 'P';
 		data->map.map[p_y][p_x] = tmp;
+		print_count(data);
 	}
 }
 
 static void	move_S(t_data *data, int p_x, int p_y)
 {
 	char	tmp;
-	char	*output;
 
-	data->count++;
-	output = ft_itoa(data->count);
-	write(1, output, ft_strlen(output));
-	write(1, "\n", 1);
 	tmp = data->map.map[p_y + 1][p_x];
 	if (tmp == 'E')
 	{
 		if (letter_count(&data->map, 'C') == 0)
+		{
+			print_count(data);
 			msg_end("game clear~!\n", 1, data);
+		}
 	}
 	else
 	{
@@ -82,23 +77,22 @@ static void	move_S(t_data *data, int p_x, int p_y)
 			tmp = '0';
 		data->map.map[p_y + 1][p_x] = 'P';
 		data->map.map[p_y][p_x] = tmp;
+		print_count(data);
 	}
 }
 
 static void	move_D(t_data *data, int p_x, int p_y)
 {
 	char	tmp;
-	char	*output;
 
-	data->count++;
-	output = ft_itoa(data->count);
-	write(1, output, ft_strlen(output));
-	write(1, "\n", 1);
 	tmp = data->map.map[p_y][p_x + 1];
 	if (tmp == 'E')
 	{
 		if (letter_count(&data->map, 'C') == 0)
+		{
+			print_count(data);
 			msg_end("game clear~!\n", 1, data);
+		}
 	}
 	else
 	{
@@ -106,6 +100,7 @@ static void	move_D(t_data *data, int p_x, int p_y)
 			tmp = '0';
 		data->map.map[p_y][p_x + 1] = 'P';
 		data->map.map[p_y][p_x] = tmp;
+		print_count(data);
 	}
 }
 

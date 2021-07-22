@@ -86,6 +86,7 @@ void	msg_end(char *err_msg, int case_num, t_data *data);
 int		press_X(t_data *data);
 int		check_element(t_map *map);
 
+void	print_count(t_data *data);
 void	mlx_pixel_put_img(t_image *img, int x, int y, int color);
 int		get_image(t_data *data);
 void	screen(t_data *data);

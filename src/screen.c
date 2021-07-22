@@ -12,6 +12,17 @@
 
 #include "so_long.h"
 
+void	print_count(t_data *data)
+{
+	char *output;
+
+	data->count++;
+	output = ft_itoa(data->count);
+	write(1, output, ft_strlen(output));
+	write(1, "\n", 1);
+	free(output);
+}
+
 void	mlx_pixel_put_img(t_image *img, int x, int y, int color)
 {
 	char	*dst;
