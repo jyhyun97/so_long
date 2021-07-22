@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/09 15:33:02 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/07/09 16:42:53 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/07/22 15:40:19 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	print_count(t_data *data)
 {
-	char *output;
+	char	*output;
 
 	data->count++;
 	output = ft_itoa(data->count);
